@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B329F18-00A2-4798-990D-CDB5B7E1D74B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ayse_OBS</RootNamespace>
+    <AssemblyName>ayse_OBS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_giris.Designer.cs">
+      <DependentUpon>admin_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ders.Designer.cs">
+      <DependentUpon>ders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersAtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersAtama.Designer.cs">
+      <DependentUpon>dersAtama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersBilgiSistemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersBilgiSistemi.Designer.cs">
+      <DependentUpon>dersBilgiSistemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dersler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dersler.Designer.cs">
+      <DependentUpon>dersler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="harc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="harc.Designer.cs">
+      <DependentUpon>harc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayit.Designer.cs">
+      <DependentUpon>kayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitOl.Designer.cs">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>obsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="obsDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>obsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="obsDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>obsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ogekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogekle.Designer.cs">
+      <DependentUpon>ogekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogNotlandırma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogNotlandırma.Designer.cs">
+      <DependentUpon>ogNotlandırma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogOzluk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogOzluk.Designer.cs">
+      <DependentUpon>ogOzluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenci.Designer.cs">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenci_giris.Designer.cs">
+      <DependentUpon>ogrenci_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogretimGorevlisi_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogretimGorevlisi_Giris.Designer.cs">
+      <DependentUpon>ogretimGorevlisi_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrharc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrharc.Designer.cs">
+      <DependentUpon>ogrharc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsınavlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsınavlar.Designer.cs">
+      <DependentUpon>ogrsınavlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogryoklama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogryoklama.Designer.cs">
+      <DependentUpon>ogryoklama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ozluk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ozluk.Designer.cs">
+      <DependentUpon>ozluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifbilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifbilgi.Designer.cs">
+      <DependentUpon>sifbilgi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin_giris.resx">
+      <DependentUpon>admin_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ders.resx">
+      <DependentUpon>ders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersAtama.resx">
+      <DependentUpon>dersAtama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersBilgiSistemi.resx">
+      <DependentUpon>dersBilgiSistemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dersler.resx">
+      <DependentUpon>dersler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="harc.resx">
+      <DependentUpon>harc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayit.resx">
+      <DependentUpon>kayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitOl.resx">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogekle.resx">
+      <DependentUpon>ogekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogNotlandırma.resx">
+      <DependentUpon>ogNotlandırma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogOzluk.resx">
+      <DependentUpon>ogOzluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenci.resx">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenci_giris.resx">
+      <DependentUpon>ogrenci_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogretimGorevlisi_Giris.resx">
+      <DependentUpon>ogretimGorevlisi_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrharc.resx">
+      <DependentUpon>ogrharc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsınavlar.resx">
+      <DependentUpon>ogrsınavlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogryoklama.resx">
+      <DependentUpon>ogryoklama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ozluk.resx">
+      <DependentUpon>ozluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sifbilgi.resx">
+      <DependentUpon>sifbilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="obsDataSet.xsc">
+      <DependentUpon>obsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>obsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obsDataSet.xss">
+      <DependentUpon>obsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet1.xsc">
+      <DependentUpon>obsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>obsDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obsDataSet1.xss">
+      <DependentUpon>obsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet2.xsc">
+      <DependentUpon>obsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="obsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>obsDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obsDataSet2.xss">
+      <DependentUpon>obsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\og.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

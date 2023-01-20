@@ -1,0 +1,38 @@
+
+
+Projemizi çalıştırdığımzda önümüze gelen giriş ekranında önce Yetki seçmeliyiz. 
+3 tane Yetki seçeneğimiz var. Eğer admin olarak giriş yapmak istiyorsak.
+Yetki olarak 'ADMİN' seçilmeli. 
+Kullanıcı kodu yerine '1111' yazılamalı. Şifre kısmına '123' yazarak
+sisteme admin olarak girebilirsiniz.
+
+Eğer öğretim görevlisi olarak giriş yapmak istiyorsanız bu sefer Yetki olarak
+'ÖĞRETİM GÖREVLİSİ' seçmelisiniz.TC kısmına '6' Şifre kısmına '123'yazıp giriş
+butonuna basarsanız.Öğretim görevlisi Cengiz YERLİKAYA olarak sisteme 
+giriş yapabilirsiniz.(Başka bir öğretim görevlisi olarak giriş yapmak isterseniz
+tbl_giris tablosundaki Yetki sütununda 'ÖĞRETİM GÖREVLİSİ' yazan bir kişini aynı 
+tablodaki Tc ve Sifre sutunlarında yazan bilgileri programımızın giriş ekranına
+yazarak girebilirsiniz.)
+
+Öğrenci olarak giriş yapmanın 2 yolu var.
+Birinci yol olarak sistemde kayıtlı olan 
+bir öğrenci olarak giriş yapabilrsiniz.Yetki olarak 'ÖĞRENCİ' seçiniz.Tc kısmına 
+'2222' ve Şifre kısmına '321' yazıp giriş butonuna tıklarsanız.Öğrenci
+Ayşenur Öztürk olarak sisteme 
+giriş yapabilirsiniz.(Başka bir öğrenci olarak giriş yapmak isterseniz
+tbl_giris tablosundaki Yetki sütununda 'ÖĞRENCİ' yazan bir kişini aynı 
+tablodaki Tc ve Sifre sutunlarında yazan bilgileri programımızın giriş ekranına
+yazarak girebilirsiniz.)
+
+İkinci yol olarak kayıt olup bilgileriniz ile sisteme giriş yapabilirisiniz.
+Yetki olarak 'ÖĞRENCİ' seçiniz.Alt kısımda çıkan üzerinde 'KAYIT OL' yazan butona
+basınız.Sizi kayıtOl formuna yönlendiricek.Bilgileriniz eksiksiz olarak doldurark.
+'KAYIT OL' yazılı butona basınız.Kaydınız başarılı ise ekrana kayıtınızın
+yapıldığına dair bir mesaj gelicektir.Sistem sizi giriş yapma kısmına otomatik
+yönlendiricek.Yetki olarak 'ÖĞRENCİ' seçiniz az önce kaydolurken girdiğiniz TC
+bilgisini ve Şifre bilgilerinizi yazıp üzerinde 'GİRİŞ' yazan butona basınız.
+ 
+
+
+Ayşenur Öztürk
+200707037
